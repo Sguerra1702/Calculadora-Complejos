@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def calccomplejos():
     print("Digite su primer numero complejo")
     comp1 = complex(input())
@@ -24,6 +27,15 @@ def multcompl(comp1, comp2):
 def divisioncomplejos(comp1, comp2):
     division = comp1 / comp2
     print(comp1, "/", comp2, "= ", division)
+
+
+def conjugado_complejos(comp1, comp2):
+    conjugado_1 = np.conjugate(comp1)
+    conjugado_2 = np.conjugate(comp2)
+    print("Los conjugados de ", comp1, "y de ", comp2, "Son ")
+    print(conjugado_1)
+    print(conjugado_2)
+    print("respectivamente")
 
 
 def main():
